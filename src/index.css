@@ -10,6 +10,7 @@
   --cor-branco: #ffffff;
   --cor-preta: #000000;
   --cor-fundo: #cecece;
+  --cor-botao: #ffffff;
 }
 
 body {
@@ -18,10 +19,20 @@ body {
 
 /* nav */
 
-nav {
+nav,
+.darkMode {
   position: fixed;
-  left: 0;
   padding: 3rem;
+}
+
+.darkMode {
+  right: 0;
+  text-decoration: none;
+  color: var(--cor-input);
+  cursor: pointer;
+  padding: 0;
+  margin: 2rem;
+  border-radius: 25%;
 }
 
 a {
@@ -61,13 +72,12 @@ a {
 }
 
 /* home */
-
 img {
   width: 450px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 30px;
-  box-shadow: -10px 15px 20px #000000;
+  box-shadow: -10px 15px 20px var(--cor-preta);
 }
 
 .home-container {
@@ -80,8 +90,9 @@ img {
 
 .title {
   & h1 {
-    font-size: 2.4rem;
     font-family: "Mochiy Pop P One", sans-serif;
+    color: var(--cor-preta);
+    font-size: 2.4rem;
   }
 
   & span {
@@ -92,14 +103,15 @@ img {
   }
 
   & h2 {
-    font-size: 2rem;
-    text-align: center;
     font-family: "Mochiy Pop P One";
     color: var(--cor-input);
+    font-size: 2rem;
+    text-align: center;
     letter-spacing: 3px;
   }
 
   & .text-home {
+    color: var(--cor-preta);
     font-size: 1.2rem;
     margin-top: 2rem;
     text-align: center;
@@ -108,8 +120,8 @@ img {
 }
 
 .see-more-btn {
-  background-color: #000000;
-  color: var(--cor-branco);
+  background-color: var(--cor-preta);
+  color: var(--cor-botao);
   font-weight: 700;
   padding: 0.8rem 1rem;
   border-radius: 20px;
@@ -121,6 +133,7 @@ img {
 
   &:hover {
     background-color: var(--cor-input);
+    color: var(--cor-branco);
     max-width: 300px;
   }
 }
