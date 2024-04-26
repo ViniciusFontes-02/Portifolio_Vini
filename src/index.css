@@ -6,14 +6,14 @@
 }
 
 :root {
-  --cor-azul: #1900ff;
-  --cor-branca: #ffffff;
+  --cor-input: #1900ff;
+  --cor-branco: #ffffff;
   --cor-preta: #000000;
-  --cor-cinza: #cecece;
+  --cor-fundo: #cecece;
 }
 
 body {
-  background-color: var(--cor-cinza);
+  background-color: var(--cor-fundo);
 }
 
 /* nav */
@@ -26,7 +26,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: var(--cor-azul);
+  color: var(--cor-input);
 }
 
 .icon-container {
@@ -35,7 +35,7 @@ a {
   list-style: none;
   font-size: 1.5rem;
   margin-top: 20px;
-  background-color: var(--cor-branca);
+  background-color: var(--cor-branco);
   padding: 15px;
   border-radius: 50%;
 }
@@ -47,8 +47,8 @@ a {
   transform: translateY(-50%);
   opacity: 0;
   font-size: 1.2rem;
-  background-color: var(--cor-azul);
-  color: var(--cor-branca);
+  background-color: var(--cor-input);
+  color: var(--cor-branco);
   padding: 5px 10px;
   border-radius: 5px;
   visibility: hidden;
@@ -58,4 +58,73 @@ a {
 .icon-container:hover .icon-text {
   opacity: 1;
   visibility: visible;
+}
+
+/* home */
+
+img {
+  width: 450px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 30px;
+  box-shadow: -10px 15px 20px #000000;
+}
+
+.home-container {
+  display: flex;
+  padding: 3rem 8rem;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  & h1 {
+    font-size: 2.4rem;
+    font-family: "Mochiy Pop P One", sans-serif;
+  }
+
+  & span {
+    color: var(--cor-input);
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  & h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Mochiy Pop P One";
+    color: var(--cor-input);
+    letter-spacing: 3px;
+  }
+
+  & .text-home {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.see-more-btn {
+  background-color: #000000;
+  color: var(--cor-branco);
+  font-weight: 700;
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.7s;
+
+  &:hover {
+    background-color: var(--cor-input);
+    max-width: 300px;
+  }
+}
+
+.see-more-btn:last-child {
+  margin-top: 2rem;
 }
