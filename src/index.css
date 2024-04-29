@@ -11,6 +11,12 @@
   --cor-preta: #000000;
   --cor-fundo: #cecece;
   --cor-botao: #ffffff;
+
+  /* --cor-input: #1900ff;
+  --cor-branco: #000000;
+  --cor-preta: #ffffff;
+  --cor-fundo: #000000;
+  --cor-botao: #000000; */
 }
 
 body {
@@ -77,7 +83,7 @@ img {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 30px;
-  box-shadow: -10px 15px 20px var(--cor-preta);
+  box-shadow: -10px 15px 12px var(--cor-preta);
 }
 
 .home-container {
@@ -140,4 +146,10 @@ img {
 
 .see-more-btn:last-child {
   margin-top: 2rem;
+}
+
+/* sobre */
+
+.about-container {
+  padding: 3rem 8rem;
 }
