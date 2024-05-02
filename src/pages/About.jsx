@@ -4,7 +4,7 @@ import { trainingData } from "../../data/db";
 
 export default function About() {
   return (
-    <section className="about-container">
+    <section className="container">
       <h2 className="title-pages">
         Sobre <span>Mim</span>
       </h2>
@@ -51,14 +51,17 @@ export default function About() {
 
           <p>
             LinkedIn:
-            <a href="https://www.linkedin.com/in/vinicius-fontes-b7a83a266/">
+            <a
+              href="https://www.linkedin.com/in/vinicius-fontes-b7a83a266/"
+              target="_blank"
+            >
               Linkedin.com/in/vinicius-fontes
             </a>
           </p>
 
           <p>
             GitHub:
-            <a href="https://github.com/ViniciusFontes-02">
+            <a href="https://github.com/ViniciusFontes-02" target="_blank">
               Github.com/ViniciusFontes-02
             </a>
           </p>
