@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import { trainingData } from "../../data/db";
 
 export default function About() {
+  const baixarPDF = () => {
+    const link = document.createElement("a");
+    link.download = "ViniciusFontes_Curriculo.pdf";
+    link.href =
+      "https://drive.google.com/file/d/1K3cS2GLQp_OraB0gs2SAQJ8qoJ_xk74n/view?usp=sharing";
+    link.target = "_blank"; // Abre o link em outra aba
+    link.click();
+  };
+
   return (
     <section className="container">
       <h2 className="title-pages">
@@ -66,7 +75,7 @@ export default function About() {
             </a>
           </p>
 
-          <button>Baixar CV</button>
+          <button onClick={baixarPDF}>Abrir CV</button>
 
           <Link to="/contact" className="contact-link">
             Contato
