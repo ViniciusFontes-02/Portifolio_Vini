@@ -1,6 +1,5 @@
 import {
-  faEnvelopeOpen,
-  faFolderOpen,
+  faComments,
   faHome,
   faSuitcase,
   faUser,
@@ -37,7 +36,7 @@ export default function Navbar() {
 
         <li className="icon-container">
           <Link to="/contact">
-            <FontAwesomeIcon icon={faEnvelopeOpen} />
+            <FontAwesomeIcon icon={faComments} />
             <span class="icon-text">Contato</span>
           </Link>
         </li>
