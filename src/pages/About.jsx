@@ -4,8 +4,8 @@ import { trainingData } from "../../data/db";
 
 export default function About() {
   return (
-    <div className="about-container">
-      <h2 className="title-about">
+    <section className="about-container">
+      <h2 className="title-pages">
         Sobre <span>Mim</span>
       </h2>
       <div className="underline"></div>
@@ -278,6 +278,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

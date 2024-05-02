@@ -1,9 +1,8 @@
 import {
   faEnvelopeOpen,
-  faFile,
   faFolderOpen,
-  faGear,
   faHome,
+  faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,15 +30,8 @@ export default function Navbar() {
 
         <li className="icon-container">
           <Link to="/projects">
-            <FontAwesomeIcon icon={faFolderOpen} />
+            <FontAwesomeIcon icon={faSuitcase} />
             <span class="icon-text">Projetos</span>
-          </Link>
-        </li>
-
-        <li className="icon-container">
-          <Link to="/certificates">
-            <FontAwesomeIcon icon={faFile} />
-            <span class="icon-text">Certificados</span>
           </Link>
         </li>
 

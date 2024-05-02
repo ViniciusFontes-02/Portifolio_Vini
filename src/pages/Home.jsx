@@ -8,7 +8,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   return (
     <div className="home-container">
-      <img src={fotoSelfie} alt="foto selfie" />
+      <img src={fotoSelfie} alt="foto selfie" className="photo-home" />
 
       <div className="title">
         <h1>

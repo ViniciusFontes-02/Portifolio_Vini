@@ -1,5 +1,12 @@
 import React from "react";
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <section className="projects-container">
+      <h2 className="title-pages">
+        Fale <span>comigo</span>
+      </h2>
+      <div className="underline"></div>
+    </section>
+  );
 }

@@ -5,7 +5,6 @@ import DarkMode from "./components/DarkMode";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 
@@ -22,7 +21,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/certificates" element={<Certificates />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* <Route path="*" element={<NotFound/>}/>  */}
