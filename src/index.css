@@ -54,3 +54,13 @@ a {
   text-decoration: none;
   color: var(--cor-input);
 }
+
+/* formatação scroll */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cor-input);
+  border-radius: 20px;
+}
