@@ -1,0 +1,27 @@
+nav,
+.darkMode {
+  position: fixed;
+  padding: 3rem;
+  margin-right: 20px;
+}
+
+.darkMode {
+  right: 0;
+  text-decoration: none;
+  color: var(--cor-input);
+  cursor: pointer;
+  padding: 0;
+  margin: 2rem;
+  border-radius: 25%;
+}
+
+.iconContainer {
+  position: relative;
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  background-color: var(--cor-branco);
+  padding: 15px;
+  border-radius: 50%;
+}

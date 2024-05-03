@@ -1,0 +1,26 @@
+.contactContainer {
+  background-color: var(--cor-branco);
+  padding: 50px;
+  border-radius: 100px;
+  text-align: center;
+
+  & h3 {
+    margin-bottom: 3rem;
+  }
+
+  & .icons {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  & svg {
+    color: var(--cor-input);
+    font-size: 5rem;
+    transition: 0.5s;
+
+    &:hover {
+      color: var(--cor-preta);
+    }
+  }
+}

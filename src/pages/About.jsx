@@ -1,4 +1,5 @@
-import React from "react";
+import styles from "./About.module.css";
+
 import { Link } from "react-router-dom";
 import { trainingData } from "../../data/db";
 
@@ -19,7 +20,7 @@ export default function About() {
       </h2>
       <div className="underline"></div>
 
-      <div className="text-about">
+      <div className={styles.textAbout}>
         <h3>
           Meu nome é Vinicius Fontes e sou <span>Desenvolvedor Web</span>
         </h3>
@@ -35,8 +36,8 @@ export default function About() {
         </p>
       </div>
 
-      <div className="container-personal">
-        <div className="personal-information">
+      <div className={styles.containerPersonal}>
+        <div className={styles.personalInformation}>
           <h3>Informações Pessoais</h3>
           <p>
             Nome: <span>Vinícius Fontes dos Santos</span>
@@ -77,12 +78,12 @@ export default function About() {
 
           <button onClick={baixarPDF}>Abrir CV</button>
 
-          <Link to="/contact" className="contact-link">
+          <Link to="/contact" className={styles.contactLink}>
             Contato
           </Link>
         </div>
 
-        <div className="container-tec">
+        <div>
           <h3>Tecnologias</h3>
 
           <a title="HTML5">
@@ -280,8 +281,8 @@ export default function About() {
                 gradientTransform="matrix(1 0 0 -1 0 514)"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#41d1ff"></stop>
-                <stop offset="1" stop-color="#9231be"></stop>
+                <stop offset="0" stopColor="#41d1ff"></stop>
+                <stop offset="1" stopColor="#9231be"></stop>
               </linearGradient>
               <path
                 fill="url(#oOTIjsOjTqJdvfy5S4iCZa_dJjTWMogzFzg_gr1)"
@@ -296,8 +297,8 @@ export default function About() {
                 gradientTransform="matrix(1 0 0 -1 0 514)"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#fed100"></stop>
-                <stop offset="1" stop-color="#e36001"></stop>
+                <stop offset="0" stopColor="#fed100"></stop>
+                <stop offset="1" stopColor="#e36001"></stop>
               </linearGradient>
               <path
                 fill="url(#oOTIjsOjTqJdvfy5S4iCZb_dJjTWMogzFzg_gr2)"
@@ -308,9 +309,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container-form">
+      <div className={styles.containerForm}>
         <div>
-          <div className="training">
+          <div className={styles.training}>
             <h3>Formação</h3>
             {trainingData.map((item) => (
               <div key={item.id}>
@@ -322,10 +323,10 @@ export default function About() {
           </div>
         </div>
 
-        <div className="container-exp">
+        <div className={styles.containerExp}>
           <h3>Experiencia</h3>
 
-          <div className="experience">
+          <div className={styles.experience}>
             <h4>Assistente Administrativo</h4>
 
             <p>01/2021 - 10/2023</p>

@@ -1,3 +1,5 @@
+import styles from "./Projects.module.css";
+
 import { projects } from "../utils/projects";
 
 export default function Projects() {
@@ -8,14 +10,14 @@ export default function Projects() {
       </h2>
       <div className="underline"></div>
 
-      <div className="projects-container">
+      <div className={styles.projectsContainer}>
         {projects.map((project) => (
-          <div key={project.id} className="inner">
-            <div className="image">
+          <div key={project.id} className={styles.inner}>
+            <div>
               <img
                 src={project.img}
                 alt={project.title}
-                className="img-project"
+                className={styles.imgProject}
               />
 
               <h4>{project.title}</h4>
@@ -29,7 +31,7 @@ export default function Projects() {
               </a>
             </div>
 
-            <button className="btn" onClick={() => handleClick(project)}>
+            <button className={styles.btn} onClick={() => handleClick(project)}>
               Ver mais informações
             </button>
           </div>

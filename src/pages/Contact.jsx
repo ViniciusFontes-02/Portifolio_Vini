@@ -4,9 +4,9 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+
+import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
@@ -16,10 +16,10 @@ export default function Contact() {
       </h2>
       <div className="underline"></div>
 
-      <div class="contact-section">
+      <div className={styles.contactContainer}>
         <h3>Contatos:</h3>
 
-        <div className="contact-icons">
+        <div className={styles.icons}>
           <a
             href="mailto:vinif.santos2002@gmail.com"
             target="_blank"

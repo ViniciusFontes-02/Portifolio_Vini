@@ -6,38 +6,39 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import React from "react";
+import styles from "./Navbar.module.css";
+
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav>
       <ul>
-        <li className="icon-container">
+        <li className={styles.icons}>
           <Link to="/">
             <FontAwesomeIcon icon={faHome} />
-            <span class="icon-text">Home</span>
+            <span className={styles.iconText}>Home</span>
           </Link>
         </li>
 
-        <li className="icon-container">
+        <li className={styles.icons}>
           <Link to="/about">
             <FontAwesomeIcon icon={faUser} />
-            <span class="icon-text">Sobre</span>
+            <span className={styles.iconText}>Sobre</span>
           </Link>
         </li>
 
-        <li className="icon-container">
+        <li className={styles.icons}>
           <Link to="/projects">
             <FontAwesomeIcon icon={faSuitcase} />
-            <span class="icon-text">Projetos</span>
+            <span className={styles.iconText}>Projetos</span>
           </Link>
         </li>
 
-        <li className="icon-container">
+        <li className={styles.icons}>
           <Link to="/contact">
             <FontAwesomeIcon icon={faComments} />
-            <span class="icon-text">Contato</span>
+            <span className={styles.iconText}>Contato</span>
           </Link>
         </li>
       </ul>
