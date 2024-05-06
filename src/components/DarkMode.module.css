@@ -8,7 +8,7 @@ nav,
 .darkMode {
   right: 0;
   text-decoration: none;
-  color: var(--cor-input);
+  color: var(--color-input);
   cursor: pointer;
   padding: 0;
   margin: 2rem;
@@ -19,9 +19,27 @@ nav,
   position: relative;
   text-align: center;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-top: 20px;
-  background-color: var(--cor-branco);
+  background-color: var(--color-bg-icons-light);
   padding: 15px;
   border-radius: 50%;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & svg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* font-size: 1.7rem; */
+  }
+
+  & .icon {
+    width: 25px;
+    height: 25px;
+  }
 }

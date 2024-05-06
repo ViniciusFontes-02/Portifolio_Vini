@@ -11,18 +11,18 @@
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 30px;
-  box-shadow: -10px 15px 12px var(--cor-preta);
+  box-shadow: -10px 15px 12px var(--color-text-light);
 }
 
 .title {
   & h1 {
     font-family: "Mochiy Pop P One", sans-serif;
-    color: var(--cor-preta);
+    color: var(--color-text-light);
     font-size: 2.3rem;
   }
 
   & span {
-    color: var(--cor-input);
+    color: var(--color-input);
     font-size: 5rem;
     font-weight: 600;
     text-align: center;
@@ -30,14 +30,14 @@
 
   & h2 {
     font-family: "Mochiy Pop P One";
-    color: var(--cor-input);
+    color: var(--color-input);
     font-size: 2rem;
     text-align: center;
     letter-spacing: 3px;
   }
 
   & .textHome {
-    color: var(--cor-preta);
+    color: var(--color-text-light);
     font-size: 1.2rem;
     margin-top: 2rem;
     text-align: center;
@@ -46,8 +46,8 @@
 }
 
 .seeMoreBtn {
-  background-color: var(--cor-preta);
-  color: var(--cor-botao);
+  background-color: var(--color-text-light);
+  color: var(--color-btn);
   font-weight: 700;
   padding: 0.8rem 1rem;
   border-radius: 20px;
@@ -58,8 +58,8 @@
   transition: all 0.7s;
 
   &:hover {
-    background-color: var(--cor-input);
-    color: var(--cor-branco);
+    background-color: var(--color-input);
+    color: var(--color-bg-icons-light);
     max-width: 300px;
   }
 }

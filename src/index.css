@@ -5,16 +5,37 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* modo escuro
 :root {
-  --cor-input: #1900ff;
-  --cor-branco: #ffffff;
-  --cor-preta: #000000;
-  --cor-fundo: #cecece;
-  --cor-botao: #ffffff;
+  --color-inputt: #1900ff;
+
+  --color-bg-icons-lightt: #000000;
+  --color-text-lightt: #ffffff;
+  --color-bg-lightt: #222222;
+  --color-btnn: #000000;
+}
+*/
+
+:root {
+  --color-input: #1900ff;
+
+  --color-bg-icons-light: #ffffff;
+  --color-text-light: #000000;
+  --color-bg-light: #cecece;
+  --color-btn: #ffffff;
+}
+
+[data-theme="dark"] {
+  --color-input: #1900ff;
+
+  --color-bg-icons-light: #000000;
+  --color-text-light: #ffffff;
+  --color-bg-light: #222222;
+  --color-btn: #000000;
 }
 
 body {
-  background-color: var(--cor-fundo);
+  background-color: var(--color-bg-light);
 }
 
 h3 {
@@ -22,6 +43,7 @@ h3 {
   font-family: "Mochiy Pop P One";
   font-weight: 500;
   margin-bottom: 1.2rem;
+  color: var(--color-text-light);
 }
 
 .container {
@@ -34,9 +56,10 @@ h3 {
   text-align: center;
   font-family: "Mochiy Pop P One";
   font-weight: 500;
+  color: var(--color-text-light);
 
   & span {
-    color: var(--cor-input);
+    color: var(--color-input);
     font-family: "Mochiy Pop P One";
   }
 }
@@ -45,14 +68,14 @@ h3 {
   width: 150px;
   height: 5px;
   border-radius: 5px;
-  background-color: var(--cor-preta);
+  background-color: var(--color-text-light);
   margin: 4px auto 0 auto;
   margin-bottom: 4rem;
 }
 
 a {
   text-decoration: none;
-  color: var(--cor-input);
+  color: var(--color-input);
 }
 
 /* formatação scroll */
@@ -61,6 +84,6 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--cor-input);
+  background-color: var(--color-input);
   border-radius: 20px;
 }

@@ -1,5 +1,5 @@
 .contactContainer {
-  background-color: var(--cor-branco);
+  background-color: var(--color-bg-icons-light);
   padding: 50px;
   border-radius: 100px;
   text-align: center;
@@ -15,12 +15,12 @@
   }
 
   & svg {
-    color: var(--cor-input);
+    color: var(--color-input);
     font-size: 5rem;
     transition: 0.5s;
 
     &:hover {
-      color: var(--cor-preta);
+      color: var(--color-text-light);
     }
   }
 }
