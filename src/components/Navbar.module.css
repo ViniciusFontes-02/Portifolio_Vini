@@ -8,6 +8,7 @@
   padding: 15px;
   border-radius: 50%;
   opacity: 0.8;
+  z-index: 999;
 
   &:hover {
     opacity: 1;
@@ -27,6 +28,7 @@
   border-radius: 5px;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
 }
 
 .icons:hover .iconText {

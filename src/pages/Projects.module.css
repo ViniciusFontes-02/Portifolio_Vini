@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  animation: animation 1s ease-in-out;
 }
 
 .inner {
@@ -51,5 +52,16 @@
   &:hover {
     background-color: var(--color-input);
     color: var(--color-bg-icons-light);
+  }
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translate3d(-500px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
   }
 }

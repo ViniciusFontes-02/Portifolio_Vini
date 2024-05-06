@@ -1,6 +1,7 @@
 .textAbout {
   margin-bottom: 2.5rem;
   color: var(--color-text-light);
+  animation: animation 1s ease-in-out;
 
   & h3 span {
     color: var(--color-input);
@@ -16,6 +17,7 @@
   display: flex;
   gap: 5rem;
   justify-content: space-between;
+  animation: animation 1s ease-in-out;
 }
 
 .personalInformation {
@@ -107,6 +109,7 @@
 .containerExp,
 .training {
   width: 500px;
+  animation: animation 1s ease-in-out;
 }
 
 .experience {
@@ -120,5 +123,16 @@
     font-size: 1rem;
     font-weight: 500;
     color: #474747;
+  }
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translate3d(-500px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
   }
 }
