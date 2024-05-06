@@ -2,6 +2,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -54,6 +55,15 @@ export default function Contact() {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
+          </a>
+
+          <a
+            href="https://wa.me/5511967519615"
+            target="_blank"
+            title="Mensagem WhatsApp"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </div>
       </div>
