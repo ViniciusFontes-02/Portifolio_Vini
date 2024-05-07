@@ -2,6 +2,7 @@ import styles from "./About.module.css";
 
 import { Link } from "react-router-dom";
 import { trainingData } from "../../data/db";
+import { useState } from "react";
 
 export default function About() {
   const baixarPDF = () => {
@@ -11,6 +12,13 @@ export default function About() {
       "https://drive.google.com/file/d/1K3cS2GLQp_OraB0gs2SAQJ8qoJ_xk74n/view?usp=sharing";
     link.target = "_blank"; // Abre o link em outra aba
     link.click();
+  };
+
+  const [selectedCourse, setSelectedCourse] = useState(null);
+
+  const handleCourseClick = (id) => {
+    // Se o curso selecionado for o mesmo que está atualmente selecionado, desmarque-o (selectedCourse se torna null)
+    setSelectedCourse(selectedCourse === id ? null : id);
   };
 
   return (
@@ -313,11 +321,17 @@ export default function About() {
         <div>
           <div className={styles.training}>
             <h3>Formação</h3>
+
             {trainingData.map((item) => (
               <div key={item.id}>
-                <h4>{item.name}</h4>
-                <p>{item.time}</p>
-                <p>{item.description}</p>
+                <h4 onClick={() => handleCourseClick(item.id)}>{item.name}</h4>
+                <h5>{item.time}</h5>
+
+                {selectedCourse === item.id && (
+                  <div>
+                    <p>{item.description}</p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -329,7 +343,7 @@ export default function About() {
           <div className={styles.experience}>
             <h4>Assistente Administrativo</h4>
 
-            <p>01/2021 - 10/2023</p>
+            <h5>01/2021 - 10/2023</h5>
             <p>
               Responsável pela criação de planilhas, controlei meticulosamente o
               envio e recebimento de mercadorias, bem como as rotas de entrega,

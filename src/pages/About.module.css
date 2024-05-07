@@ -92,6 +92,7 @@
   border-radius: 20px;
   box-shadow: 2px 10px 7px var(--color-text-light);
   height: 100%;
+  margin-bottom: 1.5rem;
 
   & p {
     font-size: 1rem;
@@ -101,7 +102,18 @@
 
   & h4 {
     font-size: 1.2rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    color: var(--color-text-light);
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--color-input);
+    }
+  }
+
+  & h5 {
     color: var(--color-text-light);
   }
 }
@@ -117,6 +129,7 @@
     font-size: 1.2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   & p {
