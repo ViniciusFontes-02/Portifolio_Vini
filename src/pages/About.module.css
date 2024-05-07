@@ -98,6 +98,8 @@
     font-size: 1rem;
     font-weight: 500;
     color: #474747;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 
   & h4 {
