@@ -94,7 +94,11 @@ export default function About() {
         <div>
           <h3>Tecnologias</h3>
 
-          <a title="HTML5">
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+            title="HTML5"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -116,7 +120,11 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="CSS3">
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+            title="CSS3"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -138,7 +146,11 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="JavaScript">
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+            title="JavaScript"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -155,7 +167,7 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="React.JS">
+          <a href="https://react.dev/" title="React.JS" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -201,7 +213,11 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="TypeScript">
+          <a
+            href="https://www.typescriptlang.org/"
+            title="TypeScript"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -222,7 +238,11 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="Python">
+          <a
+            href="https://docs.python.org/pt-br/3/tutorial/"
+            title="Python"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -242,7 +262,7 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="Git">
+          <a href="https://git-scm.com/" title="Git" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -258,7 +278,7 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="GitHub">
+          <a href="https://github.com/" title="GitHub" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -271,7 +291,7 @@ export default function About() {
             </svg>
           </a>
 
-          <a title="Vite">
+          <a href="https://vitejs.dev/" title="Vite" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

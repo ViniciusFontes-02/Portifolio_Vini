@@ -5,31 +5,20 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* modo escuro
-:root {
-  --color-inputt: #1900ff;
-
-  --color-bg-icons-lightt: #000000;
-  --color-text-lightt: #ffffff;
-  --color-bg-lightt: #222222;
-  --color-btnn: #000000;
-}
-*/
-
 :root {
   --color-input: #1900ff;
 
-  --color-bg-icons-light: #ffffff;
+  --color-bg-icons-light: #f1f1f1;
   --color-text-light: #000000;
-  --color-bg-light: #cecece;
-  --color-btn: #ffffff;
+  --color-bg-light: #c5c5c5;
+  --color-btn: #f1f1f1;
 }
 
 [data-theme="dark"] {
   --color-input: #1900ff;
 
   --color-bg-icons-light: #000000;
-  --color-text-light: #ffffff;
+  --color-text-light: #f1f1f1;
   --color-bg-light: #222222;
   --color-btn: #000000;
 }
