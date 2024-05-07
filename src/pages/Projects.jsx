@@ -60,10 +60,9 @@ export default function Projects() {
                   />
 
                   <div className={styles.infoModal}>
-                    <h4>{project.title}</h4>
-
                     <div>
-                      <h5>Descrição:</h5>
+                      <h4>{project.title}</h4>
+
                       <p>{project.description}</p>
                     </div>
 
