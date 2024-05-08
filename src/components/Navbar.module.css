@@ -35,3 +35,25 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 1024px) {
+  .icons {
+    padding: 10px;
+  }
+
+  .iconText {
+    font-size: 1rem;
+    padding: 3px 7px;
+  }
+}
+
+@media (max-width: 425px) {
+  .icons {
+    font-size: 1rem;
+  }
+
+  .iconText {
+    font-size: 0.8rem;
+    /* padding: 3px 7px; */
+  }
+}

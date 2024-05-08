@@ -40,10 +40,6 @@ export default function DarkMode() {
         <li className={styles.iconContainer} onClick={clickDarkBtn}>
           <FontAwesomeIcon icon={icon} className={styles.icon} />
         </li>
-
-        <li className={styles.iconContainer}>
-          <FontAwesomeIcon icon={faDroplet} className={styles.icon} />
-        </li>
       </ul>
     </div>
   );

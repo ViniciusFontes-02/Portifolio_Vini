@@ -91,7 +91,7 @@ export default function About() {
           </Link>
         </div>
 
-        <div>
+        <div className={styles.tecnologies}>
           <h3>Tecnologias</h3>
 
           <a

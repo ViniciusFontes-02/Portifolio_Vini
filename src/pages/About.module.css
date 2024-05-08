@@ -151,3 +151,129 @@
     transform: translate3d(0px, 0px, 0px);
   }
 }
+
+/* media */
+
+@media (max-width: 1024px) {
+  .textAbout {
+    & h3 {
+      font-size: 1.5rem;
+    }
+
+    & h3 span {
+      font-size: 1.7rem;
+    }
+
+    & p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .personalInformation {
+    font-size: 1.3rem;
+  }
+
+  .tecnologies {
+    & svg {
+      width: 80px;
+    }
+  }
+
+  .containerForm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerForm {
+    gap: 2rem;
+  }
+
+  .containerExp,
+  .training {
+    width: 700px;
+  }
+
+  .personalInformation {
+    & button,
+    .contactLink {
+      margin: 2rem 2rem 0 0;
+      padding: 1rem 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerPersonal {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .tecnologies {
+    margin-bottom: 2rem;
+  }
+
+  .personalInformation {
+    text-align: start;
+  }
+
+  .containerExp,
+  .training {
+    width: 600px;
+  }
+}
+
+@media (max-width: 425px) {
+  .textAbout {
+    & h3 {
+      font-size: 1.2rem;
+    }
+
+    & h3 span {
+      font-size: 1.2rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  .personalInformation {
+    font-size: 1rem;
+  }
+
+  .training,
+  .containerExp {
+    padding: 1rem 1.7rem;
+
+    & p {
+      font-size: 0.8rem;
+    }
+
+    & h4 {
+      font-size: 1rem;
+    }
+
+    & h5 {
+      font-size: 0.7rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .containerExp,
+  .training {
+    width: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .personalInformation {
+    & button,
+    .contactLink {
+      margin: 1.5rem 1.5rem 0 0;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+    }
+  }
+}

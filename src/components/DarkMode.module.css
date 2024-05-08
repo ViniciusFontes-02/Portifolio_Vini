@@ -35,11 +35,34 @@ nav,
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    /* font-size: 1.7rem; */
   }
 
   & .icon {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav,
+  .darkMode {
+    padding: 3rem 2rem;
+    margin-right: 15px;
+  }
+
+  .darkMode {
+    margin: 0;
+  }
+
+  .iconContainer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  nav,
+  .darkMode {
+    padding: 3rem 0.5rem;
+    margin-right: 15px;
   }
 }
