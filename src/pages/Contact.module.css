@@ -36,3 +36,34 @@
     transform: translate3d(0px, 0px, 0px);
   }
 }
+
+@media (max-width: 1024px) {
+  .contactContainer {
+    & .icons {
+      display: flex;
+      gap: 3rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contactContainer {
+    & .icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    & svg {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .contactContainer {
+    & svg {
+      font-size: 3rem;
+    }
+  }
+}

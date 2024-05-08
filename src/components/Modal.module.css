@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
 
@@ -37,5 +37,18 @@
   &:hover {
     background-color: var(--color-text-light);
     color: var(--color-bg-icons-light);
+  }
+}
+
+@media (max-width: 1090px) {
+  .containerModal {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .containerModal {
+    width: 22rem;
+    /* height: 27rem; */
   }
 }

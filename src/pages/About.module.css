@@ -154,6 +154,19 @@
 
 /* media */
 
+@media (max-width: 1300px) {
+  .containerForm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerExp,
+  .training {
+    width: 700px;
+  }
+}
+
 @media (max-width: 1024px) {
   .textAbout {
     & h3 {
@@ -180,18 +193,7 @@
   }
 
   .containerForm {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .containerForm {
     gap: 2rem;
-  }
-
-  .containerExp,
-  .training {
-    width: 700px;
   }
 
   .personalInformation {
@@ -204,7 +206,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .containerPersonal {
     flex-direction: column;
     gap: 0.5rem;
@@ -224,7 +226,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 780px) {
   .textAbout {
     & h3 {
       font-size: 1.2rem;
@@ -275,5 +277,10 @@
       padding: 0.6rem 1rem;
       font-size: 1rem;
     }
+  }
+
+  .containerExp,
+  .training {
+    width: 300px;
   }
 }
