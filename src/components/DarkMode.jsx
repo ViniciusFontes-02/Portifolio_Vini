@@ -1,9 +1,4 @@
-import {
-  faDroplet,
-  faGear,
-  faMoon,
-  faSun,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./DarkMode.module.css";
